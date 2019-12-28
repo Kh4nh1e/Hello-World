@@ -1,0 +1,804 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>Journey</title>
+<!-- 
+Journey Template 
+http://www.templatemo.com/tm-511-journey
+-->
+    <!-- load stylesheets -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700">  <!-- Google web font "Open Sans" -->
+    <link rel="stylesheet" href="font-awesome-4.7.0/css/font-awesome.min.css">                <!-- Font Awesome -->
+    <link rel="stylesheet" href="css/bootstrap.min.css">                                      <!-- Bootstrap style -->
+    <link rel="stylesheet" type="text/css" href="css/datepicker.css"/>
+    <link rel="stylesheet" type="text/css" href="slick/slick.css"/>
+    <link rel="stylesheet" type="text/css" href="slick/slick-theme.css"/>
+    <link rel="stylesheet" href="css/templatemo-style.css">                                   <!-- Templatemo style -->
+
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+            <!--[if lt IE 9]>
+              <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+              <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+          <![endif]-->
+      </head>
+
+      <body>
+        <div class="tm-main-content" id="top">
+            <div class="tm-top-bar-bg"></div>    
+            <div class="tm-top-bar" id="tm-top-bar">
+                <div class="container">
+                    <div class="row">
+                        <nav class="navbar navbar-expand-lg narbar-light">
+                            <a class="navbar-brand mr-auto" href="#">
+                                <img src="img/logo.png" alt="Site logo">
+                                Journey
+                            </a>
+                            <button type="button" id="nav-toggle" class="navbar-toggler collapsed" data-toggle="collapse" data-target="#mainNav" aria-expanded="false" aria-label="Toggle navigation">
+                                <span class="navbar-toggler-icon"></span>
+                            </button>
+                            <div id="mainNav" class="collapse navbar-collapse tm-bg-white">
+                                <ul class="navbar-nav ml-auto">
+                                  <li class="nav-item">
+                                    <a class="nav-link active" href="#top">Trang chủ<span class="sr-only">(current)</span></a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="#tm-section-2">Điểm đến nổi bật</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="#tm-section-3">Đề nghị cho bạn</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="#tm-section-4">Liên hệ chúng tôi</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="login.html" target="_parent">Đăng nhập</a>
+                                </li>
+                            </ul>
+                        </div>                            
+                    </nav>
+                </div> <!-- row -->
+            </div> <!-- container -->
+        </div> <!-- .tm-top-bar -->
+
+        <div class="tm-page-wrap mx-auto">
+            <section class="tm-banner">
+                <div class="tm-container-outer tm-banner-bg">
+                    <div class="container">
+
+                        <div class="row tm-banner-row tm-banner-row-header">
+                            <div class="col-xs-12">
+                                <div class="tm-banner-header">
+                                    <h1 class="text-uppercase tm-banner-title">Chào mừng</h1>
+                                    <img src="img/dots-3.png" alt="Dots">
+                                    <p class="tm-banner-subtitle">Chúng tôi hỗ trợ bạn tìm đến những nơi tốt nhất</p>
+                                    <a href="javascript:void(0)" class="tm-down-arrow-link"><i class="fa fa-2x fa-angle-down tm-down-arrow"></i></a>       
+                                </div>    
+                            </div>  <!-- col-xs-12 -->                      
+                        </div> <!-- row -->
+                        <div class="row tm-banner-row" id="tm-section-search">
+
+                            <form action="index.html" method="get" class="tm-search-form tm-section-pad-2">
+                                <div class="form-row tm-search-form-row">                                
+                                    <div class="form-group tm-form-group tm-form-group-pad tm-form-group-1">
+                                        <label for="inputCity">Lựa chọn điểm đến</label>
+                                        <input name="destination" type="text" class="form-control" id="inputCity" placeholder="Nhập điểm đến...">
+                                    </div>
+                                    <div class="form-group tm-form-group tm-form-group-1">                                    
+                                        <div class="form-group tm-form-group tm-form-group-pad tm-form-group-2">
+                                            <label for="inputRoom">Bao nhiêu phòng?</label>
+                                            <select name="room" class="form-control tm-select" id="inputRoom">
+                                                <option value="1" selected>1 Phòng</option>
+                                                <option value="2">2 Phòng</option>
+                                                <option value="3">3 Phòng</option>
+                                                <option value="4">4 Phòng</option>
+                                                <option value="5">5 Phòng</option>
+                                                <option value="6">6 Phòng</option>
+                                                <option value="7">7 Phòng</option>
+                                                <option value="8">8 Phòng</option>
+                                                <option value="9">9 Phòng</option>
+                                                <option value="10">10 Phòng</option>
+                                            </select>                                        
+                                        </div>
+                                        <div class="form-group tm-form-group tm-form-group-pad tm-form-group-3">                                       
+                                            <label for="inputAdult">Người lớn</label>     
+                                            <select name="adult" class="form-control tm-select" id="inputAdult">
+                                                <option value="1" selected>1</option>
+                                                <option value="2">2</option>
+                                                <option value="3">3</option>
+                                                <option value="4">4</option>
+                                                <option value="5">5</option>
+                                                <option value="6">6</option>
+                                                <option value="7">7</option>
+                                                <option value="8">8</option>
+                                                <option value="9">9</option>
+                                                <option value="10">10</option>
+                                            </select>                                        
+                                        </div>
+                                        <div class="form-group tm-form-group tm-form-group-pad tm-form-group-3">
+
+                                            <label for="inputChildren">Trẻ em</label>                                            
+                                            <select name="children" class="form-control tm-select" id="inputChildren">
+                                            	<option value="0" selected>0</option>
+                                                <option value="1">1</option>
+                                                <option value="2">2</option>
+                                                <option value="3">3</option>
+                                                <option value="4">4</option>
+                                                <option value="5">5</option>
+                                                <option value="6">6</option>
+                                                <option value="7">7</option>
+                                                <option value="8">8</option>
+                                                <option value="9">9</option>
+                                            </select>                                        
+                                        </div>
+                                    </div>
+                                </div> <!-- form-row -->
+                                <div class="form-row tm-search-form-row">
+
+                                    <div class="form-group tm-form-group tm-form-group-pad tm-form-group-3">
+                                        <label for="inputCheckIn">Ngày nhận phòng</label>
+                                        <input name="check-in" type="text" class="form-control" id="inputCheckIn" placeholder="Ngày nhận">
+                                    </div>
+                                    <div class="form-group tm-form-group tm-form-group-pad tm-form-group-3">
+                                        <label for="inputCheckOut">Ngày trả phòng</label>
+                                        <input name="check-out" type="text" class="form-control" id="inputCheckOut" placeholder="Ngày trả">
+                                    </div>
+                                    <div class="form-group tm-form-group tm-form-group-pad tm-form-group-1">
+                                        <label for="btnSubmit">&nbsp;</label>
+                                        <button type="submit" class="btn btn-primary tm-btn tm-btn-search text-uppercase" id="btnSubmit">Những nơi có sẵn</button>
+                                    </div>
+                                </div>                              
+                            </form>                             
+
+                        </div> <!-- row -->
+                        <div class="tm-banner-overlay"></div>
+                    </div>  <!-- .container -->                   
+                </div>     <!-- .tm-container-outer -->                 
+            </section>
+
+            <section class="p-5 tm-container-outer tm-bg-gray">            
+                <div class="container">
+                    <div class="row">
+                        <div class="col-xs-12 mx-auto tm-about-text-wrap text-center">                        
+                            <h2 class="text-uppercase mb-4"><strong>Hành trình của bạn</strong> là nghĩa vụ của chúng tôi</h2>
+                            <p class="mb-4">Chúng tôi sẽ hỗ trợ hành trình của bạn trở nên dễ dàng hơn và thoải mái hơn. Bởi vì niềm vui của bạn cũng là niềm vui và là niềm tự hào đối với chúng tôi.</p>
+                            <a href="#" class="text-uppercase btn-primary tm-btn">Tiếp tục lựa chọn</a>                              
+                        </div>
+                    </div>
+                </div>            
+            </section>
+            
+            <div class="tm-container-outer" id="tm-section-2">
+                <section class="tm-slideshow-section">
+                    <div class="tm-slideshow">
+                        <img src="img/tm-img-01.jpg" alt="Image">
+                        <img src="img/tm-img-02.jpg" alt="Image">
+                        <img src="img/tm-img-03.jpg" alt="Image">    
+                    </div>
+                    <div class="tm-slideshow-description tm-bg-primary">
+                        <h2 class="">Những điểm du lịch được lựa chọn nhiều nhất ở Châu Âu</h2>
+                        <p>Châu Âu là nơi có khí hậu mát mẻ và dễ chị cùng với những địa danh nổi tiếng. Nó còn mang trong mình phong cách hoàng gia quý phái và thanh lịch. Vì thế Châu Âu được đại đa số khách du lịch lựa chọn là điểm đến mỗi khi cần nghỉ mát hay muốn khám phá thiên nhiên tuyệt mỹ nơi đây.</p>
+                        <a href="#" class="text-uppercase tm-btn tm-btn-white tm-btn-white-primary">Đọc tiếp</a>
+                    </div>
+                </section>
+                <section class="clearfix tm-slideshow-section tm-slideshow-section-reverse">
+
+                    <div class="tm-right tm-slideshow tm-slideshow-highlight">
+                        <img src="img/tm-img-02.jpg" alt="Image">
+                        <img src="img/tm-img-03.jpg" alt="Image">
+                        <img src="img/tm-img-01.jpg" alt="Image">
+                    </div> 
+
+                    <div class="tm-slideshow-description tm-slideshow-description-left tm-bg-highlight">
+                        <h2 class="">Những điểm du lịch phổ biến ở Châu Á</h2>
+                        <p>Châu Á mang trong mình những nét văn hoá cổ xưa và vẫn còn tồn tại cho đến ngày nay. Các nền văn minh lâu đời cùng với những tập tục xa xưa luôn thu hút sự tò mò và muốn trải nghiệm của khách du lịch.</p>
+                        <a href="#" class="text-uppercase tm-btn tm-btn-white tm-btn-white-highlight">Đọc tiếp</a>
+                    </div>                        
+
+                </section>
+                <section class="tm-slideshow-section">
+                    <div class="tm-slideshow">
+                        <img src="img/tm-img-03.jpg" alt="Image">
+                        <img src="img/tm-img-02.jpg" alt="Image">
+                        <img src="img/tm-img-01.jpg" alt="Image">
+                    </div>
+                    <div class="tm-slideshow-description tm-bg-primary">
+                        <h2 class="">Những điểm du lịch nổi tiếng ở Châu Mĩ</h2>
+                        <p>Châu Mĩ được chia làm ba phần với những đặc điểm khác nhau. Bắc Mĩ là nơi của sự cải tiến vượt bậc. Trung Mĩ là nơi gợi nhớ về miền viễn tây cùng với ẩm thực độc đáo. Nam Mĩ là nơi có nền văn hoá cổ xưa cổ kín.</p>
+                        <a href="#" class="text-uppercase tm-btn tm-btn-white tm-btn-white-primary">Đọc tiếp</a>
+                    </div>
+                </section>
+            </div>        
+            <div class="tm-container-outer" id="tm-section-3">
+                <ul class="nav nav-pills tm-tabs-links">
+                    <li class="tm-tab-link-li">
+                        <a href="#1a" data-toggle="tab" class="tm-tab-link">
+                            <img src="img/north-america.png" alt="Image" class="img-fluid">
+                            Bắc Mĩ
+                        </a>
+                    </li>
+                    <li class="tm-tab-link-li">
+                        <a href="#2a" data-toggle="tab" class="tm-tab-link">
+                            <img src="img/south-america.png" alt="Image" class="img-fluid">
+                            Nam Mĩ
+                        </a>
+                    </li>
+                    <li class="tm-tab-link-li">
+                        <a href="#3a" data-toggle="tab" class="tm-tab-link">
+                            <img src="img/europe.png" alt="Image" class="img-fluid">
+                            Châu Âu
+                        </a>
+                    </li>
+                    <li class="tm-tab-link-li">
+                        <a href="#4a" data-toggle="tab" class="tm-tab-link active"><!-- Current Active Tab -->
+                            <img src="img/asia.png" alt="Image" class="img-fluid">
+                            Châu Á
+                        </a>
+                    </li>
+                    <li class="tm-tab-link-li">
+                        <a href="#5a" data-toggle="tab" class="tm-tab-link">
+                            <img src="img/africa.png" alt="Image" class="img-fluid">
+                            Châu Phi
+                        </a>
+                    </li>
+                    <li class="tm-tab-link-li">
+                        <a href="#6a" data-toggle="tab" class="tm-tab-link">
+                            <img src="img/australia.png" alt="Image" class="img-fluid">
+                            Châu Đại Dương
+                        </a>
+                    </li>
+                    <li class="tm-tab-link-li">
+                        <a href="#7a" data-toggle="tab" class="tm-tab-link">
+                            <img src="img/antartica.png" alt="Image" class="img-fluid">
+                            Nam Cực
+                        </a>
+                    </li>
+                </ul>
+                <div class="tab-content clearfix">
+                	
+                    <!-- Tab 1 -->
+                    <div class="tab-pane fade" id="1a">
+                        <div class="tm-recommended-place-wrap">
+                            <div class="tm-recommended-place">
+                                <img src="img/grand-canyon.jpg" alt="Image" class="img-fluid tm-recommended-img">
+                                <div class="tm-recommended-description-box">
+                                    <h3 class="tm-recommended-title">Grand Canyon</h3>
+                                    <p class="tm-text-highlight">Bắc Arizona</p>
+                                    <p class="tm-text-gray">The Grand Canyon là nơi thu hút khách du lịch nhất ở Mĩ. Nó có hiểm núi sâu 1.6 km và dài 446 km. Nơi đây dành cho những khách du lịch muốn trải nghiệm sự mạo hiểm và thách thức chình bản thân mình...</p>   
+                                </div>
+                                <a href="#" class="tm-recommended-price-box">
+                                    <p class="tm-recommended-price">$15000</p>
+                                    <p class="tm-recommended-price-link">Đọc tiếp</p>
+                                </a>                        
+                            </div>
+
+                            <div class="tm-recommended-place">
+                                <img src="img/florida-keys.jpg" alt="Image" class="img-fluid tm-recommended-img">
+                                <div class="tm-recommended-description-box">
+                                    <h3 class="tm-recommended-title">Florida Keys</h3>
+                                    <p class="tm-text-highlight">Bán đảo Florida</p>
+                                    <p class="tm-text-gray">The Florida Keys là một chuỗi các hòn đảo nhiệt đới uốn cong quanh khu vực bán đảo Florida. Phong cảnh ở đây đẹp và mát mẻ cho những người muốn trải nghiệm một cuộc sống thanh tĩnh...</p>   
+                                </div>
+                                <div id="preload-hover-img"></div>
+                                <a href="#" class="tm-recommended-price-box">
+                                    <p class="tm-recommended-price">$10000</p>
+                                    <p class="tm-recommended-price-link">Đọc tiếp</p>
+                                </a>
+                            </div>
+
+                            <div class="tm-recommended-place">
+                                <img src="img/las-vegas.jpg" alt="Image" class="img-fluid tm-recommended-img">
+                                <div class="tm-recommended-description-box">
+                                    <h3 class="tm-recommended-title">Las Vegas</h3>
+                                    <p class="tm-text-highlight">Nằm giữa ở phía nam sa mạc Nevada</p>
+                                    <p class="tm-text-gray">Được mệnh danh là thánh địa cờ bạc của thế giới. Các sòng casino có thế được tìm thấy bất cử ở đâu trên Las Vegas. Nó mang lại trải nghiệm cuộc sống vương giả cho những người muốn đến đây tìm vận may...</p>   
+                                </div>
+                                <a href="#" class="tm-recommended-price-box">
+                                    <p class="tm-recommended-price">$50000</p>
+                                    <p class="tm-recommended-price-link">Đọc tiếp</p>
+                                </a>
+                            </div>
+
+                            <div class="tm-recommended-place">
+                                <img src="img/hawaii.jpg" alt="Image" class="img-fluid tm-recommended-img">
+                                <div class="tm-recommended-description-box">
+                                    <h3 class="tm-recommended-title">Hawaii</h3>
+                                    <p class="tm-text-highlight">Quần đảo Hawai'i, Thái Bình Dương</p>
+                                    <p class="tm-text-gray">Hawaii là một trong các khu nghỉ dưỡng nổi tiếng nhất thế giới. Nó có những bãi biển đẹp nhất thế giới. Sẽ là nơi nghỉ mát lí tưởng cho những mua hè ôi bức...</p>   
+                                </div>
+                                <a href="#" class="tm-recommended-price-box">
+                                    <p class="tm-recommended-price">$25000</p>
+                                    <p class="tm-recommended-price-link">Đọc tiếp</p>
+                                </a>
+                            </div>    
+                        </div>                        
+
+                        <a href="#" class="text-uppercase btn-primary tm-btn mx-auto tm-d-table">Hiển thị thêm</a>
+                    </div> <!-- tab-pane -->
+                    
+                    <!-- Tab 2 -->
+                    <div class="tab-pane fade" id="2a">
+
+                        <div class="tm-recommended-place-wrap">
+                            <div class="tm-recommended-place">
+                                <img src="img/rio-janeiro.jpg" alt="Image" class="img-fluid tm-recommended-img">
+                                <div class="tm-recommended-description-box">
+                                    <h3 class="tm-recommended-title">Rio de Janeiro</h3>
+                                    <p class="tm-text-highlight">Brazil</p>
+                                    <p class="tm-text-gray">Một trong những nơi tuyệt hảo nhất Nam Mĩ là Rio de Janeiro-Một nơi thực sự chạm đến trái tim chúng ta vì cái đẹp của nó. Đa số khách du lịch thích thú nơi đây là vì có những bãi biển đẹp và những buổi tiệc cuồng nhiệt. Tuy nhiên nó còn ẩn chứa nhiều bí ẩn của riêng mình. Đến đây khách du lịch sẽ được trải nghiệm sự giao thoa văn hoá Phi-Âu đặc sắc...</p>   
+                                </div>
+                                <a href="#" class="tm-recommended-price-box">
+                                    <p class="tm-recommended-price">$30000</p>
+                                    <p class="tm-recommended-price-link">Đọc tiếp</p>
+                                </a>                        
+                            </div>
+
+                            <div class="tm-recommended-place">
+                                <img src="img/iquitos.jpg" alt="Image" class="img-fluid tm-recommended-img">
+                                <div class="tm-recommended-description-box">
+                                    <h3 class="tm-recommended-title">Iquitos</h3>
+                                    <p class="tm-text-highlight">Perú</p>
+                                    <p class="tm-text-gray">Đến Nam Mĩ sẽ không trọn vẹn nếu bạn bỏ qua một cuộc thảm hiểm ở khu vực sông Amazon. Bạn sẽ có một chuyến thăm quan ở rừng rậm và xem các loại động, thực vật hoang dã nơi đây. Bạn còn có cơ hội trải nghiệm cuộc sống của người bản xứ, ngắm nhìn các con sông, hồ nước đẹp mê ly và còn được đi bộ trong các khu rừng mua nhiệt đới...</p>   
+                                </div>
+                                <a href="#" class="tm-recommended-price-box">
+                                    <p class="tm-recommended-price">$7500</p>
+                                    <p class="tm-recommended-price-link">Đọc tiếp</p>
+                                </a>
+                            </div>
+
+                            <div class="tm-recommended-place">
+                                <img src="img/cayo-sombrero.jpg" alt="Image" class="img-fluid tm-recommended-img">
+                                <div class="tm-recommended-description-box">
+                                    <h3 class="tm-recommended-title">Cayo Sombrero</h3>
+                                    <p class="tm-text-highlight">Venezuela</p>
+                                    <p class="tm-text-gray">Cayo Sombrero là một hòn đảo nhỏ, không có giao thông hay bất kì khách sạn nào và không có người định cư ở đây vì thế nó rất yên tĩnh và đáng để trải nghiệm. Tới đây bạn sẽ thấy được bãi cát trắng tinh khôi, nước biển xanh lam ngọc và được thưởng thức ẩm thực biển nhiệt đới một cách đầy trọn vẹn...</p>   
+                                </div>
+                                <a href="#" class="tm-recommended-price-box">
+                                    <p class="tm-recommended-price">$5000</p>
+                                    <p class="tm-recommended-price-link">Đọc tiếp</p>
+                                </a>
+                            </div>
+
+                            <div class="tm-recommended-place">
+                                <img src="img/eje-cafetero.jpg" alt="Image" class="img-fluid tm-recommended-img">
+                                <div class="tm-recommended-description-box">
+                                    <h3 class="tm-recommended-title">Eje Cafetero</h3>
+                                    <p class="tm-text-highlight">Colombia</p>
+                                    <p class="tm-text-gray">Đây là nơi dành cho những tín đồ cà phê muốn thưởng thức hương vị cà phê chất lượng bậc nhất thế giới hay đơn thuần là nghỉ dưỡng cùng gia đình và người thân. Ở đây có những ngọn núi xanh với khu vực rộng lớn có thể tham gia các hoạt động lành mạnh như leo núi, cưỡi ngựa hay chỉ là đi bộ quanh khu vực Valle del Cocora để cơ thể thư giãn trong bầu không khí tươi mát...</p>   
+                                </div>
+                                <a href="#" class="tm-recommended-price-box">
+                                    <p class="tm-recommended-price">$2500</p>
+                                    <p class="tm-recommended-price-link">Đọc tiếp</p>
+                                </a>
+                            </div>    
+                        </div>                        
+
+                        <a href="#" class="text-uppercase btn-primary tm-btn mx-auto tm-d-table">Hiển thị thêm</a>
+                    </div> <!-- tab-pane -->          
+                    
+                    <!-- Tab 3 -->     
+                    <div class="tab-pane fade" id="3a">
+
+                        <div class="tm-recommended-place-wrap">
+                            <div class="tm-recommended-place">
+                                <img src="img/rome.jpg" alt="Image" class="img-fluid tm-recommended-img">
+                                <div class="tm-recommended-description-box">
+                                    <h3 class="tm-recommended-title">Rome</h3>
+                                    <p class="tm-text-highlight">Ý</p>
+                                    <p class="tm-text-gray">Rome là một nơi không thể bỏ qua trong những nơi bạn muốn tham quan ở Châu Âu. Mang trong mình nét đẹp thanh tao cùng với những món ăn trang nhã và đậm chất hương vị Ý. Lòng đi đến đây là quên đường về...</p>   
+                                </div>
+                                <a href="#" class="tm-recommended-price-box">
+                                    <p class="tm-recommended-price">$55000</p>
+                                    <p class="tm-recommended-price-link">Đọc tiếp</p>
+                                </a>                        
+                            </div>
+
+                            <div class="tm-recommended-place">
+                                <img src="img/paris.jpg" alt="Image" class="img-fluid tm-recommended-img">
+                                <div class="tm-recommended-description-box">
+                                    <h3 class="tm-recommended-title">Paris</h3>
+                                    <p class="tm-text-highlight">Pháp</p>
+                                    <p class="tm-text-gray">Tới Paris bạn sẽ được ngắm nhìn Tháp Eiffel và thưởng thức các món ăn Pháp ngay trên tháp. Bạn còn được trải nghiệm các di tích cổ, viện bảo tàng, đặc biệt là nhà thờ Đức Bà danh tiếng...</p>   
+                                </div>
+                                <a href="#" class="tm-recommended-price-box">
+                                    <p class="tm-recommended-price">$60000</p>
+                                    <p class="tm-recommended-price-link">Đọc tiếp</p>
+                                </a>
+                            </div>
+
+                            <div class="tm-recommended-place">
+                                <img src="img/barcelona.jpg" alt="Image" class="img-fluid tm-recommended-img">
+                                <div class="tm-recommended-description-box">
+                                    <h3 class="tm-recommended-title">Barcelona</h3>
+                                    <p class="tm-text-highlight">Tây Ban Nha</p>
+                                    <p class="tm-text-gray">Kiến trúc đa dạng của thành phố Barcelona làm cho nó khác biệt với những điểm đến khác ở Châu Âu. Bạn có thể dạo quanh thành phố ngắm nhìn những toà nhà mang phong cách thời trung cổ. Khi bạn thấm mệt thì có thể nghỉ ngơi tại bãi biển La Barceloneta và thưởng thức các món ăn bản địa hoặc nhâm nhi Sangria dọc theo Las Ramblas...</p>   
+                                </div>
+                                <a href="#" class="tm-recommended-price-box">
+                                    <p class="tm-recommended-price">$45000</p>
+                                    <p class="tm-recommended-price-link">Đọc tiếp</p>
+                                </a>
+                            </div>
+
+                            <div class="tm-recommended-place">
+                                <img src="img/berlin.jpg" alt="Image" class="img-fluid tm-recommended-img">
+                                <div class="tm-recommended-description-box">
+                                    <h3 class="tm-recommended-title">Berlin</h3>
+                                    <p class="tm-text-highlight">Đức</p>
+                                    <p class="tm-text-gray">Thủ đô Đức tự tin khoe mình về mọi thứ từ viện bảo tàng, thời trang cho đến thức ăn và các câu lạc bộ đêm. Bạn có thể dành một buổi chiều mát tại quán cà phê và ngắm nhìn dòng người qua lại trên các con phố hay tham gia các câu lạc bộ nhảy xuyên đêm cùng với những người bạn mới quen tại nơi đây...</p>   
+                                </div>
+                                <a href="#" class="tm-recommended-price-box">
+                                    <p class="tm-recommended-price">$30000</p>
+                                    <p class="tm-recommended-price-link">Đọc tiếp</p>
+                                </a>
+                            </div>    
+                        </div>                        
+
+                        <a href="#" class="text-uppercase btn-primary tm-btn mx-auto tm-d-table">Hiển thị thêm</a>
+                    </div> <!-- tab-pane -->
+                    
+                    <!-- Tab 4 -->
+                    <div class="tab-pane fade show active" id="4a">
+                    <!-- Current Active Tab WITH "show active" classes in DIV tag -->
+                        <div class="tm-recommended-place-wrap">
+                            <div class="tm-recommended-place">
+                                <img src="img/ha-long-bay.jpg" alt="Image" class="img-fluid tm-recommended-img">
+                                <div class="tm-recommended-description-box">
+                                    <h3 class="tm-recommended-title">Vịnh Hạ Long</h3>
+                                    <p class="tm-text-highlight">Việt Nam</p>
+                                    <p class="tm-text-gray">Được biết đến là một trong bảy kì quan của thế giới. Vịnh Hạ Long mang vẻ đẹp của trốn thiên đường. Tới đây bạn sẽ tận hưởng được khí hậu mát mẻ cùng với ẩm thực biển tươi sống và gặp gỡ con người thân thiện...</p>   
+                                </div>
+                                <a href="#" class="tm-recommended-price-box">
+                                    <p class="tm-recommended-price">$1000</p>
+                                    <p class="tm-recommended-price-link">Đọc tiếp</p>
+                                </a>                        
+                            </div>
+
+                            <div class="tm-recommended-place">
+                                <img src="img/taj-mahal.jpg" alt="Image" class="img-fluid tm-recommended-img">
+                                <div class="tm-recommended-description-box">
+                                    <h3 class="tm-recommended-title">Taj Mahal</h3>
+                                    <p class="tm-text-highlight">Ấn Độ</p>
+                                    <p class="tm-text-gray">Taj Mahal sở hữu một kiến trúc cổ xưa và là một viên ngọc quý đối với cư dân Ấn Độ. Nó có những khu vườn tuyệt mỹ, được xem là biểu tượng của thiên đường hay còn được gọi là thiên đàng trốn trần gian...</p>   
+                                </div>
+                                <div id="preload-hover-img"></div>
+                                <a href="#" class="tm-recommended-price-box">
+                                    <p class="tm-recommended-price">$10000</p>
+                                    <p class="tm-recommended-price-link">Đọc tiếp</p>
+                                </a>
+                            </div>
+
+                            <div class="tm-recommended-place">
+                                <img src="img/maldives.jpg" alt="Image" class="img-fluid tm-recommended-img">
+                                <div class="tm-recommended-description-box">
+                                    <h3 class="tm-recommended-title">Maldives</h3>
+                                    <p class="tm-text-highlight">Quần đảo Maldives</p>
+                                    <p class="tm-text-gray">Đây là một điểm đến xa xôi, nó là một quần đảo ở Ấn Độ Dương gồm hơn 1200 đảo. Phong cảnh ở đây tựa trốn bồng lai. Biển xanh ngát, cát trắng thuần khiết và những rạn san hô sặc sở...</p>   
+                                </div>
+                                <a href="#" class="tm-recommended-price-box">
+                                    <p class="tm-recommended-price">$34000</p>
+                                    <p class="tm-recommended-price-link">Đọc tiếp</p>
+                                </a>
+                            </div>
+
+                            <div class="tm-recommended-place">
+                                <img src="img/phuket.jpg" alt="Image" class="img-fluid tm-recommended-img">
+                                <div class="tm-recommended-description-box">
+                                    <h3 class="tm-recommended-title">Phuket</h3>
+                                    <p class="tm-text-highlight">Thái Lan</p>
+                                    <p class="tm-text-gray">Ở Phuket bạn sẽ được chiêm ngưỡng những bãi biển tuyệt đẹp với nét truyền thống Thái Lan cùng với đó là những bãi đá nhô lên khỏi mặt nước tạo nên một tiên cảnh nơi đây. Thư giãn trên bãi biển và tận hưởng trên những tour thuyền là những thứ phổ biến ở Phuket...</p>   
+                                </div>
+                                <a href="#" class="tm-recommended-price-box">
+                                    <p class="tm-recommended-price">$5000</p>
+                                    <p class="tm-recommended-price-link">Đọc tiếp</p>
+                                </a>
+                            </div>    
+                        </div>                        
+
+                        <a href="#" class="text-uppercase btn-primary tm-btn mx-auto tm-d-table">Hiển thị thêm</a>
+                    </div> <!-- tab-pane -->
+                    
+                    <!-- Tab 5 -->
+                    <div class="tab-pane fade" id="5a">
+
+                        <div class="tm-recommended-place-wrap">
+                            <div class="tm-recommended-place">
+                                <img src="img/giza.jpg" alt="Image" class="img-fluid tm-recommended-img">
+                                <div class="tm-recommended-description-box">
+                                    <h3 class="tm-recommended-title">Kim tử tháp Giza</h3>
+                                    <p class="tm-text-highlight">Ai Cập</p>
+                                    <p class="tm-text-gray">Những kim tử tháp ở Giza là những cấu trúc vĩ đại và lâu đời nhất của lịch sử nhân loại. Nó mang trong mình những bí ẩn của lịch sử có niêm đại hàng ngàn năm tuổi mà đến giờ vẫn chưa được khám phá hết. Vì thế mà nó vẫn luôn gây tò mò cho những người muốn tìm hiểu và khám phá...</p>   
+                                </div>
+                                <a href="#" class="tm-recommended-price-box">
+                                    <p class="tm-recommended-price">$15000</p>
+                                    <p class="tm-recommended-price-link">Đọc tiếp</p>
+                                </a>                        
+                            </div>
+
+                            <div class="tm-recommended-place">
+                                <img src="img/jemaa-el-fna.jpg" alt="Image" class="img-fluid tm-recommended-img">
+                                <div class="tm-recommended-description-box">
+                                    <h3 class="tm-recommended-title">Djemaa el Fna</h3>
+                                    <p class="tm-text-highlight">Ma rốc</p>
+                                    <p class="tm-text-gray">Là một trong những thành phố thú vị nhất của thế giới. Bạn có thể bắt gặp những người điều khiển rắn bằng ống sáo, nghệ thuật xăm henna, những người chuyên kể những câu truyện cổ nơi đây, những người bán hàng... vào một buổi chiều muộn trong lòng thành phố cũ Marrakech...</p>   
+                                </div>
+                                <a href="#" class="tm-recommended-price-box">
+                                    <p class="tm-recommended-price">$15000</p>
+                                    <p class="tm-recommended-price-link">Đọc tiếp</p>
+                                </a>
+                            </div>
+
+                            <div class="tm-recommended-place">
+                                <img src="img/table-mountain.jpg" alt="Image" class="img-fluid tm-recommended-img">
+                                <div class="tm-recommended-description-box">
+                                    <h3 class="tm-recommended-title">Table Mountain</h3>
+                                    <p class="tm-text-highlight">Nam Phi</p>
+                                    <p class="tm-text-gray">Thuộc một trong những thành phố biển đẹp nhất thế giới và cũng là một trong những nơi ăn ảnh bậc nhất thế giới. Trên những đỉnh núi cao luôn có sẵn những cáp treo để bạn tận hưởng và thoả thích chụp những bức ảnh tuyệt vời nơi đây, có thể là chụp cảnh mặt trời mộc hay lặn và tự thử thách bản thân xem có chụp quá 50 tấm hình không nhé...</p>   
+                                </div>
+                                <a href="#" class="tm-recommended-price-box">
+                                    <p class="tm-recommended-price">$30000</p>
+                                    <p class="tm-recommended-price-link">Đọc tiếp</p>
+                                </a>
+                            </div>
+
+                            <div class="tm-recommended-place">
+                                <img src="img/nile.jpg" alt="Image" class="img-fluid tm-recommended-img">
+                                <div class="tm-recommended-description-box">
+                                    <h3 class="tm-recommended-title">Wonders of the Nile</h3>
+                                    <p class="tm-text-highlight">Ai Cập</p>
+                                    <p class="tm-text-gray">Dọc theo dòng sông Nile, ta được chiêm ngưỡng những chiếc thuyền buồm xuôi theo dòng nước, cảnh quan đặc sắc và một nền văn minh lâu đời nhất trong lịch sử hình thành nhân loại...</p>   
+                                </div>
+                                <a href="#" class="tm-recommended-price-box">
+                                    <p class="tm-recommended-price">$13000</p>
+                                    <p class="tm-recommended-price-link">Đọc tiếp</p>
+                                </a>
+                            </div>    
+                        </div>                        
+
+                        <a href="#" class="text-uppercase btn-primary tm-btn mx-auto tm-d-table">Hiển thị thêm</a>
+                    </div> <!-- tab-pane -->   
+                    
+                    <!-- Tab 6 -->            
+                    <div class="tab-pane fade" id="6a">
+
+                        <div class="tm-recommended-place-wrap">
+                            <div class="tm-recommended-place">
+                                <img src="img/great-barrier.jpg" alt="Image" class="img-fluid tm-recommended-img">
+                                <div class="tm-recommended-description-box">
+                                    <h3 class="tm-recommended-title">Rạn san hô Great Barrier</h3>
+                                    <p class="tm-text-highlight">Úc</p>
+                                    <p class="tm-text-gray">Great Barrier là khu vực đa dạng về sinh học với đủ các chủng loài. Tại đây bạn sẽ được lặn xuống biển để chiêm ngưỡng những sinh vật dưới đại dương và còn nhiều hoạt động khác...</p>   
+                                </div>
+                                <a href="#" class="tm-recommended-price-box">
+                                    <p class="tm-recommended-price">$35000</p>
+                                    <p class="tm-recommended-price-link">Đọc tiếp</p>
+                                </a>                        
+                            </div>
+
+                            <div class="tm-recommended-place">
+                                <img src="img/opera-sydney.jpg" alt="Image" class="img-fluid tm-recommended-img">
+                                <div class="tm-recommended-description-box">
+                                    <h3 class="tm-recommended-title">Nhà hát Opera Sydney</h3>
+                                    <p class="tm-text-highlight">Úc</p>
+                                    <p class="tm-text-gray">Tọa lạc tại bến cảng Sydney lừng danh, nhà hát Opera Sydney nổi tiếng là một công trình kiến trúc độc đáo nhất thế giới với hình dáng như một con sò hay một cánh buồm đang no gió ra khơi. Nhà hát này chính là địa điểm biểu diễn nghệ thuật lừng danh khắp năm châu...</p>   
+                                </div>
+                                <a href="#" class="tm-recommended-price-box">
+                                    <p class="tm-recommended-price">$25000</p>
+                                    <p class="tm-recommended-price-link">Đọc tiếp</p>
+                                </a>
+                            </div>
+
+                            <div class="tm-recommended-place">
+                                <img src="img/bora-bora.jpg" alt="Image" class="img-fluid tm-recommended-img">
+                                <div class="tm-recommended-description-box">
+                                    <h3 class="tm-recommended-title">Bora Bora</h3>
+                                    <p class="tm-text-highlight">Úc</p>
+                                    <p class="tm-text-gray">Những đầm phá màu ngọc lam, cát trắng mềm mại và ánh hoàng hôn màu cam đậm tạo nên khung cảnh lãng mạn trên hòn đảo, đẹp đến mức chúng được đặt tên hai lần. Hòa mình cùng loài cá nhiệt đới khi bơi lội quanh Vườn San hô hoặc Mũi Tupitipiti, hay thư giãn trong một chuyến tham quan tự lái xe trong khi chiêm ngưỡng khung cảnh tuyệt đẹp của Núi Otemanu trước đây là núi lửa...</p>   
+                                </div>
+                                <a href="#" class="tm-recommended-price-box">
+                                    <p class="tm-recommended-price">$43000</p>
+                                    <p class="tm-recommended-price-link">Đọc tiếp</p>
+                                </a>
+                            </div>
+
+                            <div class="tm-recommended-place">
+                                <img src="img/whitsunday.jpg" alt="Image" class="img-fluid tm-recommended-img">
+                                <div class="tm-recommended-description-box">
+                                    <h3 class="tm-recommended-title">Quần đảo Whitsunday</h3>
+                                    <p class="tm-text-highlight">Úc</p>
+                                    <p class="tm-text-gray">Bãi biển Whitehaven trong xanh nhìn thấu tận đáy đại dương với những bãi cát trải dài hàng cây số, là nơi đẹp nhất của quần đảo Whitsunday. Không chỉ hấp dẫn bởi cảnh quan tuyệt đẹp, nơi đây còn được mẹ thiên nhiên ban tặng khí hậu trong lành, ôn hòa quanh năm. Những hòn đảo nhỏ xinh là sự lựa chọn hoàn hảo cho du khách tìm kiếm một kỳ nghỉ tuần trăng mật bên nửa kia của mình...</p>   
+                                </div>
+                                <a href="#" class="tm-recommended-price-box">
+                                    <p class="tm-recommended-price">$55000</p>
+                                    <p class="tm-recommended-price-link">Đọc tiếp</p>
+                                </a>
+                            </div>    
+                        </div>                        
+
+                        <a href="#" class="text-uppercase btn-primary tm-btn mx-auto tm-d-table">Hiển thị thêm</a>
+                    </div> <!-- tab-pane -->
+                    
+                    <!-- Tab 7 -->
+                    <div class="tab-pane fade" id="7a">
+
+                        <div class="tm-recommended-place-wrap">
+                            <div class="tm-recommended-place">
+                                <img src="img/paradise-bay.jpg" alt="Image" class="img-fluid tm-recommended-img">
+                                <div class="tm-recommended-description-box">
+                                    <h3 class="tm-recommended-title">Paradise Bay </h3>
+                                    <p class="tm-text-highlight">Nam Cực</p>
+                                    <p class="tm-text-gray">Khi du ngoạn đến đây bạn sẽ được ngắm nhìn những chú chim cánh cụt và những núi tuyết khổng lồ bằng du thuyền lớn hay có thể tự mình trải nghiệm cận cảnh thì có thể thuê những chiếc thuyết nhỏ có người lái...</p>   
+                                </div>
+                                <a href="#" class="tm-recommended-price-box">
+                                    <p class="tm-recommended-price">$15000</p>
+                                    <p class="tm-recommended-price-link">Đọc tiếp</p>
+                                </a>                        
+                            </div>
+
+                            <div class="tm-recommended-place">
+                                <img src="img/south-shetland-islands.png" alt="Image" class="img-fluid tm-recommended-img">
+                                <div class="tm-recommended-description-box">
+                                    <h3 class="tm-recommended-title">South Shetland Islands</h3>
+                                    <p class="tm-text-highlight">Nam Cực</p>
+                                    <p class="tm-text-gray">Tại đây bạn có thể nhìn thấy những núi lửa bị che phủ bới lớp tuyết dày. Ngắm nhìn những chú chim cánh cụt, hải cẩu...</p>   
+                                </div>
+                                <a href="#" class="tm-recommended-price-box">
+                                    <p class="tm-recommended-price">$18000</p>
+                                    <p class="tm-recommended-price-link">Đọc tiếp</p>
+                                </a>
+                            </div>
+
+                            <div class="tm-recommended-place">
+                                <img src="img/Mario_Zucchelli_Station.jpg" alt="Image" class="img-fluid tm-recommended-img">
+                                <div class="tm-recommended-description-box">
+                                    <h3 class="tm-recommended-title">Mario Zucchelli Station</h3>
+                                    <p class="tm-text-highlight">Nam Cực</p>
+                                    <p class="tm-text-gray">Đây là nơi thú vị cho những người đam mê khoa học và muốn tìm hiểu sâu về khoa học...</p>   
+                                </div>
+                                <a href="#" class="tm-recommended-price-box">
+                                    <p class="tm-recommended-price">$5000</p>
+                                    <p class="tm-recommended-price-link">Đọc tiếp</p>
+                                </a>
+                            </div>
+
+                            <div class="tm-recommended-place">
+                                <img src="img/Great-Wall-Station.jpg" alt="Image" class="img-fluid tm-recommended-img">
+                                <div class="tm-recommended-description-box">
+                                    <h3 class="tm-recommended-title">Great Wall Station</h3>
+                                    <p class="tm-text-highlight">Nam Cực</p>
+                                    <p class="tm-text-gray">Là một nơi không thể bỏ qua cho những người có niềm đam mê bất tận với khí tượng học và địa chất...</p>   
+                                </div>
+                                <a href="#" class="tm-recommended-price-box">
+                                    <p class="tm-recommended-price">$8000</p>
+                                    <p class="tm-recommended-price-link">Đọc tiếp</p>
+                                </a>
+                            </div>    
+                        </div>                        
+
+                        <a href="#" class="text-uppercase btn-primary tm-btn mx-auto tm-d-table">Hiển thị thêm</a>
+                    </div> <!-- tab-pane -->
+                </div>
+            </div>
+
+            <div class="tm-container-outer tm-position-relative" id="tm-section-4">
+                <div id="google-map"></div>
+                <form action="index.html" method="post" class="tm-contact-form">
+                    <div class="form-group tm-name-container">
+                        <input type="text" id="contact_name" name="contact_name" class="form-control" placeholder="Name"  required/>
+                    </div>
+                    <div class="form-group tm-email-container">
+                        <input type="email" id="contact_email" name="contact_email" class="form-control" placeholder="Email"  required/>
+                    </div>
+                    <div class="form-group">
+                        <input type="text" id="contact_subject" name="contact_subject" class="form-control" placeholder="Subject"  required/>
+                    </div>
+                    <div class="form-group">
+                        <textarea id="contact_message" name="contact_message" class="form-control" rows="9" placeholder="Message" required></textarea>
+                    </div>
+                    <button type="submit" class="btn btn-primary tm-btn-primary tm-btn-send text-uppercase">Send Message Now</button>
+                </form>
+            </div> <!-- .tm-container-outer -->
+
+            <footer class="tm-container-outer">
+                <p class="mb-0">Copyright © <span class="tm-current-year">2018</span> Your Company 
+                    
+                . Designed by <a rel="nofollow" href="http://www.google.com/+templatemo" target="_parent">Template Mo</a></p>
+            </footer>
+        </div>
+    </div> <!-- .main-content -->
+
+    <!-- load JS files -->
+    <script src="js/jquery-1.11.3.min.js"></script>             <!-- jQuery (https://jquery.com/download/) -->
+    <script src="js/popper.min.js"></script>                    <!-- https://popper.js.org/ -->       
+    <script src="js/bootstrap.min.js"></script>                 <!-- https://getbootstrap.com/ -->
+    <script src="js/datepicker.min.js"></script>                <!-- https://github.com/qodesmith/datepicker -->
+    <script src="js/jquery.singlePageNav.min.js"></script>      <!-- Single Page Nav (https://github.com/ChrisWojcik/single-page-nav) -->
+    <script src="slick/slick.min.js"></script>                  <!-- http://kenwheeler.github.io/slick/ -->
+    <script src="js/jquery.scrollTo.min.js"></script>           <!-- https://github.com/flesler/jquery.scrollTo -->
+    <script> 
+        /* Google Maps
+        ------------------------------------------------*/
+        var map = '';
+        var center;
+
+        function initialize() {
+            var mapOptions = {
+                zoom: 16,
+                center: new google.maps.LatLng(37.769725, -122.462154),
+                scrollwheel: false
+            };
+
+            map = new google.maps.Map(document.getElementById('google-map'),  mapOptions);
+
+            google.maps.event.addDomListener(map, 'idle', function() {
+              calculateCenter();
+          });
+
+            google.maps.event.addDomListener(window, 'resize', function() {
+              map.setCenter(center);
+          });
+        }
+
+        function calculateCenter() {
+            center = map.getCenter();
+        }
+
+        function loadGoogleMap(){
+            var script = document.createElement('script');
+            script.type = 'text/javascript';
+            script.src = 'https://maps.googleapis.com/maps/api/js?key=AIzaSyDVWt4rJfibfsEDvcuaChUaZRS5NXey1Cs&v=3.exp&sensor=false&' + 'callback=initialize';
+            document.body.appendChild(script);
+        } 
+
+        /* DOM is ready
+        ------------------------------------------------*/
+        $(function(){
+
+            // Change top navbar on scroll
+            $(window).on("scroll", function() {
+                if($(window).scrollTop() > 100) {
+                    $(".tm-top-bar").addClass("active");
+                } else {                    
+                 $(".tm-top-bar").removeClass("active");
+                }
+            });
+
+            // Smooth scroll to search form
+            $('.tm-down-arrow-link').click(function(){
+                $.scrollTo('#tm-section-search', 300, {easing:'linear'});
+            });
+
+            // Date Picker in Search form
+            var pickerCheckIn = datepicker('#inputCheckIn');
+            var pickerCheckOut = datepicker('#inputCheckOut');
+
+            // Update nav links on scroll
+            $('#tm-top-bar').singlePageNav({
+                currentClass:'active',
+                offset: 60
+            });
+
+            // Close navbar after clicked
+            $('.nav-link').click(function(){
+                $('#mainNav').removeClass('show');
+            });
+
+            // Slick Carousel
+            $('.tm-slideshow').slick({
+                infinite: true,
+                arrows: true,
+                slidesToShow: 1,
+                slidesToScroll: 1
+            });
+
+            loadGoogleMap();                                       // Google Map                
+            $('.tm-current-year').text(new Date().getFullYear());  // Update year in copyright           
+        });
+
+    </script>             
+
+</body>
+</html>
